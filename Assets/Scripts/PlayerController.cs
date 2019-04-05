@@ -4,13 +4,13 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
-    public Joystick joystick;
-    private Rigidbody rb;
+    public VariableJoystick joystick;
+    public Rigidbody rb;
 
     void Start()
     {
-        joystick = GameObject.Find("Background").GetComponent<Joystick>();
-        rb = GetComponent<Rigidbody>();
+        // joystick = GameObject.Find("Background").GetComponent<VariableJoystick>();
+        // rb = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate()
